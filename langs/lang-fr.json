@@ -1,0 +1,12 @@
+{
+    "my_city": "Ma Ville",
+    "prayer_times": "Heures de Prière",
+    "fajr": "Fajr",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha",
+    "qibla": "Qibla",
+    "geo_error": "Échec de la localisation",
+    "geo_unsupported": "Géolocalisation non prise en charge"
+}
