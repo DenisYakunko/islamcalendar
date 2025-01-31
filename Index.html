@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Calendar</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Языковой переключатель -->
+        <div class="language-switcher">
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="ru">Русский</option>
+                <option value="ar">العربية</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="hi">हिन्दी</option>
+            </select>
+        </div>
+
+        <!-- Шапка -->
+        <header>
+            <div class="hijri-date">
+                <span id="hijri-day"></span>
+                <span id="hijri-month"></span>
+                <span id="hijri-year"></span>
+            </div>
+            
+            <div class="center-section">
+                <button id="location-btn" class="location-btn">📍 <span data-translate="my_city">My City</span></button>
+            </div>
+        </header>
+
+        <!-- Основной контент -->
+        <main>
+            <h1><span data-translate="prayer_times">Время намаза</span> <span id="city-name">...</span></h1>
+            <div class="prayer-times">
+                <div class="prayer-card"><span data-translate="fajr">Фаджр</span><span id="fajr"></span></div>
+                <div class="prayer-card"><span data-translate="dhuhr">Зухр</span><span id="dhuhr"></span></div>
+                <div class="prayer-card"><span data-translate="asr">Аср</span><span id="asr"></span></div>
+                <div class="prayer-card"><span data-translate="maghrib">Магриб</span><span id="maghrib"></span></div>
+                <div class="prayer-card"><span data-translate="isha">Иша</span><span id="isha"></span></div>
+            </div>
+        </main>
+
+        <!-- Кибла-компас -->
+        <div class="qibla-compass">
+			<div class="compass-icon">🕌</div>
+			<div class="qibla-direction" id="qibla-direction">
+        <span data-translate="qibla">Кибла</span>: ...
+    </div>
+</div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
